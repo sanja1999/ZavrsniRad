@@ -10,6 +10,18 @@ namespace zavrsniMongo.Models
 {
     public class Category
     {
+        public Category(string name, int nodeDepth, string fullPathName, int leftNode, int rightNode, int parentID, DateTime createTime, DateTime timeStamp)
+        {
+            Name = name;
+            NodeDepth = nodeDepth;
+            FullPathName = fullPathName;
+            LeftNode = leftNode;
+            RightNode = rightNode;
+            ParentID = parentID;
+            CreateTime = createTime;
+            TimeStamp = timeStamp;
+        }
+
         [BsonId]
         public ObjectId Id { get; set; }
         [BsonElement("categoryID")]
