@@ -68,7 +68,7 @@ namespace zavrsniMongo.Forms
                 var currentCell = salePaymentsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 filterTextBox.Text = currentCell.OwningColumn.Name;
             }
-            catch(Exception)
+            catch(FormatException)
             {
                 MessageBox.Show("Molim označite ćelije koje nisu nazivi stupaca");
             }

@@ -143,36 +143,6 @@ namespace zavrsniMongo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MongoDB {
-            get {
-                object obj = ResourceManager.GetObject("MongoDB", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MongoDBFinal {
-            get {
-                object obj = ResourceManager.GetObject("MongoDBFinal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MongoDBNovo {
-            get {
-                object obj = ResourceManager.GetObject("MongoDBNovo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap mongoDBpic2 {
             get {
                 object obj = ResourceManager.GetObject("mongoDBpic2", resourceCulture);

@@ -53,21 +53,6 @@ namespace zavrsniMongo.Forms
                 var query = collection.Find(filterDefinition1).Sort(filterDefinition).ToList();
                 customersDataGridView.DataSource = query;
             }
-
-            /*
-            switch (sortType)
-            {
-                case "FirstName":
-                    break;
-                case "LastName":
-                    break;
-                case "Company":
-                    break;
-                case "CreateTime":
-                    break;
-            }
-            */
-            
         }
 
         private void sortComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,23 +78,11 @@ namespace zavrsniMongo.Forms
             }
         }
 
-        private void sort(string sortValue, string sortType)
+        private void updateButton_Click(object sender, EventArgs e)
         {
-            if (sortValue == "Silazno")
-            {
-
-                var filterDefinition1 = Builders<Customer>.Filter.Empty;
-                var filterDefinition = Builders<Customer>.Sort.Ascending(a => a.FirstName);
-                var query = collection.Find(filterDefinition1).Sort(filterDefinition).ToList();
-                customersDataGridView.DataSource = query;
-            }
-            else
-            {
-                var filterDefinition1 = Builders<Customer>.Filter.Empty;
-                var filterDefinition = Builders<Customer>.Sort.Descending(a => a.FirstName);
-                var query = collection.Find(filterDefinition1).Sort(filterDefinition).ToList();
-                customersDataGridView.DataSource = query;
-            }
+            ReadAllDocuments();
+            sortComboBox.SelectedIndex = -1;
+            sortTypeComboBox.SelectedIndex = -1;
         }
     }
 }

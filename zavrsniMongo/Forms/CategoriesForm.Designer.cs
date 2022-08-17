@@ -32,7 +32,6 @@ namespace zavrsniMongo
         private void InitializeComponent()
         {
             this.categoriesDataGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.idLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
@@ -74,18 +73,6 @@ namespace zavrsniMongo
             this.categoriesDataGridView.Size = new System.Drawing.Size(860, 214);
             this.categoriesDataGridView.TabIndex = 0;
             this.categoriesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.categoriesDataGridView_CellClick);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(157, 466);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // closeButton
             // 
@@ -356,7 +343,6 @@ namespace zavrsniMongo
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.categoriesDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CategoriesForm";
@@ -370,7 +356,6 @@ namespace zavrsniMongo
         #endregion
 
         private System.Windows.Forms.DataGridView categoriesDataGridView;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button closeButton;
         private Label idLabel;
         private TextBox idTextBox;

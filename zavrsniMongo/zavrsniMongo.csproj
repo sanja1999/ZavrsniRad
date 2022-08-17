@@ -169,6 +169,7 @@
     <Compile Include="Forms\SalesForm.Designer.cs">
       <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Forms\HomeForm.cs">
       <SubType>Form</SubType>
