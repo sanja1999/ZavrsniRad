@@ -92,7 +92,7 @@ namespace zavrsniMongo.Forms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 81);
+            this.panel1.Size = new System.Drawing.Size(197, 69);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -119,7 +119,7 @@ namespace zavrsniMongo.Forms
             // panel3
             // 
             this.panel3.Controls.Add(this.categoriesButton);
-            this.panel3.Location = new System.Drawing.Point(3, 151);
+            this.panel3.Location = new System.Drawing.Point(3, 139);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(197, 47);
             this.panel3.TabIndex = 3;
@@ -127,7 +127,7 @@ namespace zavrsniMongo.Forms
             // panel4
             // 
             this.panel4.Controls.Add(this.customerButton);
-            this.panel4.Location = new System.Drawing.Point(3, 204);
+            this.panel4.Location = new System.Drawing.Point(3, 192);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(197, 47);
             this.panel4.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace zavrsniMongo.Forms
             // panel5
             // 
             this.panel5.Controls.Add(this.itemButton);
-            this.panel5.Location = new System.Drawing.Point(3, 257);
+            this.panel5.Location = new System.Drawing.Point(3, 245);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(197, 47);
             this.panel5.TabIndex = 3;
@@ -143,7 +143,7 @@ namespace zavrsniMongo.Forms
             // panel6
             // 
             this.panel6.Controls.Add(this.salePaymentButton);
-            this.panel6.Location = new System.Drawing.Point(3, 310);
+            this.panel6.Location = new System.Drawing.Point(3, 298);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(197, 47);
             this.panel6.TabIndex = 5;
@@ -152,7 +152,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel2.Controls.Add(this.saleButton);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(3, 363);
+            this.panel2.Location = new System.Drawing.Point(3, 351);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 47);
             this.panel2.TabIndex = 6;
@@ -176,7 +176,7 @@ namespace zavrsniMongo.Forms
             // panel7
             // 
             this.panel7.Controls.Add(this.aboutButton);
-            this.panel7.Location = new System.Drawing.Point(3, 416);
+            this.panel7.Location = new System.Drawing.Point(3, 404);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(197, 47);
             this.panel7.TabIndex = 7;
@@ -195,14 +195,14 @@ namespace zavrsniMongo.Forms
             this.panelNewForm.Location = new System.Drawing.Point(200, 0);
             this.panelNewForm.Margin = new System.Windows.Forms.Padding(2);
             this.panelNewForm.Name = "panelNewForm";
-            this.panelNewForm.Size = new System.Drawing.Size(728, 496);
+            this.panelNewForm.Size = new System.Drawing.Size(621, 470);
             this.panelNewForm.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::zavrsniMongo.Properties.Resources.bazaPodataka;
-            this.pictureBox1.Location = new System.Drawing.Point(244, 163);
+            this.pictureBox1.Location = new System.Drawing.Point(98, 97);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(450, 300);
@@ -254,7 +254,7 @@ namespace zavrsniMongo.Forms
             this.categoriesButton.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.categoriesButton.Size = new System.Drawing.Size(197, 47);
             this.categoriesButton.TabIndex = 1;
-            this.categoriesButton.Text = "           Categories";
+            this.categoriesButton.Text = "           Kategorije";
             this.categoriesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.categoriesButton.UseVisualStyleBackColor = true;
             this.categoriesButton.Click += new System.EventHandler(this.categoriesButton_Click);
@@ -273,7 +273,7 @@ namespace zavrsniMongo.Forms
             this.customerButton.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.customerButton.Size = new System.Drawing.Size(197, 47);
             this.customerButton.TabIndex = 1;
-            this.customerButton.Text = "           Customer";
+            this.customerButton.Text = "           Kupci";
             this.customerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.customerButton.UseVisualStyleBackColor = true;
             this.customerButton.Click += new System.EventHandler(this.customerButton_Click);
@@ -295,6 +295,7 @@ namespace zavrsniMongo.Forms
             this.itemButton.Text = "           Proizvodi";
             this.itemButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.itemButton.UseVisualStyleBackColor = true;
+            this.itemButton.Click += new System.EventHandler(this.itemButton_Click);
             // 
             // salePaymentButton
             // 
@@ -313,6 +314,7 @@ namespace zavrsniMongo.Forms
             this.salePaymentButton.Text = "           Plaćanje";
             this.salePaymentButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.salePaymentButton.UseVisualStyleBackColor = true;
+            this.salePaymentButton.Click += new System.EventHandler(this.salePaymentButton_Click);
             // 
             // saleButton
             // 
@@ -331,6 +333,7 @@ namespace zavrsniMongo.Forms
             this.saleButton.Text = "           Prodano";
             this.saleButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saleButton.UseVisualStyleBackColor = true;
+            this.saleButton.Click += new System.EventHandler(this.saleButton_Click);
             // 
             // aboutButton
             // 
@@ -349,14 +352,16 @@ namespace zavrsniMongo.Forms
             this.aboutButton.Text = "           O aplikaciji";
             this.aboutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 496);
+            this.ClientSize = new System.Drawing.Size(821, 470);
             this.Controls.Add(this.panelNewForm);
             this.Controls.Add(this.menuBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

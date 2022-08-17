@@ -69,8 +69,7 @@ namespace zavrsniMongo.Forms
 
         private void customerButton_Click(object sender, EventArgs e)
         {
-            CustomersForm form = new CustomersForm();
-            form.ShowDialog();
+            openNewForm(new CustomersForm());
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -83,7 +82,25 @@ namespace zavrsniMongo.Forms
             openNewForm(new HomeForm());
         }
 
-       
+        private void itemButton_Click(object sender, EventArgs e)
+        {
+            openNewForm(new ItemsForm());
+        }
+
+        private void salePaymentButton_Click(object sender, EventArgs e)
+        {
+            openNewForm(new SalePaymentsForm());
+        }
+
+        private void saleButton_Click(object sender, EventArgs e)
+        {
+            openNewForm(new SalesForm());
+        }
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            openNewForm(new AboutForm());
+        }
     }
 }
 

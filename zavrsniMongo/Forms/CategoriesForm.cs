@@ -11,14 +11,12 @@ namespace zavrsniMongo
 {
     public partial class CategoriesForm : Form
     {
-        static readonly IMongoCollection<SalePayment> collection= Connection.db.GetCollection<SalePayment>("sale_payment");
+        static readonly IMongoCollection<Category> collection= Connection.db.GetCollection<Category>("categories");
 
         public void ReadAllDocuments()
         {
-            
-            List<SalePayment> list = collection.AsQueryable().ToList<SalePayment>();
+            List<Category> list = collection.AsQueryable().ToList<Category>();
             categoriesDataGridView.DataSource = list;
-            
 
         }
 
@@ -27,6 +25,7 @@ namespace zavrsniMongo
             InitializeComponent();
             ReadAllDocuments();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -48,12 +47,12 @@ namespace zavrsniMongo
             categoriesDataGridView.DataSource = products;
             */
 
-            /* FILTER KOJI RADI */
-            var filterDefinition = Builders<SalePayment>.Filter.Eq(a => a.PaymentTypeId, 72251);
+            /* FILTER KOJI RADI 
+            var filterDefinition = Builders<Category>.Filter.Eq(a => a.PaymentTypeId, 72251);
             //var filterDefinition = Builders<SalePayment>.Filter.Eq(a => a.PaymentTypeId, int.Parse(textBox1.Text));
             var products = collection.Find(filterDefinition).ToList();
             categoriesDataGridView.DataSource = products;
-            
+            */
 
             /* SORT KOJI RADI
             var filterDefinition1 = Builders<SalePayment>.Filter.Empty;
