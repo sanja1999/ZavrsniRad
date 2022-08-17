@@ -82,7 +82,7 @@ namespace zavrsniMongo.Forms
             this.menuBar.MaximumSize = new System.Drawing.Size(210, 550);
             this.menuBar.MinimumSize = new System.Drawing.Size(58, 550);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(107, 550);
+            this.menuBar.Size = new System.Drawing.Size(210, 550);
             this.menuBar.TabIndex = 1;
             // 
             // panel1
@@ -330,19 +330,20 @@ namespace zavrsniMongo.Forms
             // panelNewForm
             // 
             this.panelNewForm.AutoSize = true;
+            this.panelNewForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
             this.panelNewForm.Controls.Add(this.pictureBox1);
             this.panelNewForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNewForm.Location = new System.Drawing.Point(107, 0);
+            this.panelNewForm.Location = new System.Drawing.Point(210, 0);
             this.panelNewForm.Margin = new System.Windows.Forms.Padding(2);
             this.panelNewForm.Name = "panelNewForm";
-            this.panelNewForm.Size = new System.Drawing.Size(512, 550);
+            this.panelNewForm.Size = new System.Drawing.Size(409, 550);
             this.panelNewForm.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::zavrsniMongo.Properties.Resources.MongoDBFinal;
-            this.pictureBox1.Location = new System.Drawing.Point(112, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 72);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(350, 341);
