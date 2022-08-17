@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,46 @@ namespace zavrsniMongo.Forms
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void queryButton_Click(object sender, EventArgs e)
+        {
+            if (filterTextBox.Text == "Type" || filterTextBox.Text == "DeviceId" || filterTextBox.Text == "StatusId")
+            {
+                var filterDefinition = Builders<SalePayment>.Filter.Eq(filterTextBox.Text, queryTextBox.Text);
+                var query = collection.Find(filterDefinition).ToList();
+                salePaymentsDataGridView.DataSource = query;
+            }
+            else
+            {
+                if(filterTextBox.Text == "Id" || filterTextBox.Text == "Saleid")
+                {
+                    var filterDefinition = Builders<SalePayment>.Filter.Eq(filterTextBox.Text, ObjectId.Parse(queryTextBox.Text));
+                    var query = collection.Find(filterDefinition).ToList();
+                    salePaymentsDataGridView.DataSource = query;
+                }
+                else
+                {
+                    var filterDefinition = Builders<SalePayment>.Filter.Eq(filterTextBox.Text, int.Parse(queryTextBox.Text));
+                    var query = collection.Find(filterDefinition).ToList();
+                    salePaymentsDataGridView.DataSource = query;
+                }
+            }
+        }
+
+        private void salePaymentsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+
+                queryTextBox.Text = salePaymentsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                var currentCell = salePaymentsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                filterTextBox.Text = currentCell.OwningColumn.Name;
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Molim označite ćelije koje nisu nazivi stupaca");
+            }
         }
     }
 }

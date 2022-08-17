@@ -31,6 +31,11 @@ namespace zavrsniMongo.Forms
         {
             this.salePaymentsDataGridView = new System.Windows.Forms.DataGridView();
             this.closeButton = new System.Windows.Forms.Button();
+            this.queryButton = new System.Windows.Forms.Button();
+            this.queryTextBox = new System.Windows.Forms.RichTextBox();
+            this.filterTextBox = new System.Windows.Forms.RichTextBox();
+            this.filterLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.salePaymentsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,8 +49,9 @@ namespace zavrsniMongo.Forms
             this.salePaymentsDataGridView.Name = "salePaymentsDataGridView";
             this.salePaymentsDataGridView.ReadOnly = true;
             this.salePaymentsDataGridView.RowTemplate.Height = 24;
-            this.salePaymentsDataGridView.Size = new System.Drawing.Size(540, 286);
+            this.salePaymentsDataGridView.Size = new System.Drawing.Size(792, 282);
             this.salePaymentsDataGridView.TabIndex = 0;
+            this.salePaymentsDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.salePaymentsDataGridView_CellClick);
             // 
             // closeButton
             // 
@@ -54,7 +60,7 @@ namespace zavrsniMongo.Forms
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Image = global::zavrsniMongo.Properties.Resources.imageedit_45_8938306716;
-            this.closeButton.Location = new System.Drawing.Point(529, 11);
+            this.closeButton.Location = new System.Drawing.Point(963, 11);
             this.closeButton.Margin = new System.Windows.Forms.Padding(2);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(60, 36);
@@ -62,12 +68,70 @@ namespace zavrsniMongo.Forms
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // queryButton
+            // 
+            this.queryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.queryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.queryButton.FlatAppearance.BorderSize = 0;
+            this.queryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.queryButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.queryButton.ForeColor = System.Drawing.Color.White;
+            this.queryButton.Location = new System.Drawing.Point(670, 417);
+            this.queryButton.Margin = new System.Windows.Forms.Padding(2);
+            this.queryButton.Name = "queryButton";
+            this.queryButton.Size = new System.Drawing.Size(98, 36);
+            this.queryButton.TabIndex = 32;
+            this.queryButton.Text = "Filtriraj";
+            this.queryButton.UseVisualStyleBackColor = false;
+            this.queryButton.Click += new System.EventHandler(this.queryButton_Click);
+            // 
+            // queryTextBox
+            // 
+            this.queryTextBox.Location = new System.Drawing.Point(408, 417);
+            this.queryTextBox.Name = "queryTextBox";
+            this.queryTextBox.Size = new System.Drawing.Size(111, 50);
+            this.queryTextBox.TabIndex = 33;
+            this.queryTextBox.Text = "";
+            // 
+            // filterTextBox
+            // 
+            this.filterTextBox.Location = new System.Drawing.Point(145, 417);
+            this.filterTextBox.Name = "filterTextBox";
+            this.filterTextBox.Size = new System.Drawing.Size(168, 50);
+            this.filterTextBox.TabIndex = 34;
+            this.filterTextBox.Text = "";
+            // 
+            // filterLabel
+            // 
+            this.filterLabel.AutoSize = true;
+            this.filterLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterLabel.Location = new System.Drawing.Point(12, 417);
+            this.filterLabel.Name = "filterLabel";
+            this.filterLabel.Size = new System.Drawing.Size(90, 14);
+            this.filterLabel.TabIndex = 35;
+            this.filterLabel.Text = "Filtriraj po stupcu:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(332, 417);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 14);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "za vrijednost:";
+            // 
             // SalePaymentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1034, 507);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.filterLabel);
+            this.Controls.Add(this.filterTextBox);
+            this.Controls.Add(this.queryTextBox);
+            this.Controls.Add(this.queryButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.salePaymentsDataGridView);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -75,6 +139,7 @@ namespace zavrsniMongo.Forms
             this.Text = "SalePaymentsForm";
             ((System.ComponentModel.ISupportInitialize)(this.salePaymentsDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -82,5 +147,10 @@ namespace zavrsniMongo.Forms
 
         private System.Windows.Forms.DataGridView salePaymentsDataGridView;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button queryButton;
+        private System.Windows.Forms.RichTextBox queryTextBox;
+        private System.Windows.Forms.RichTextBox filterTextBox;
+        private System.Windows.Forms.Label filterLabel;
+        private System.Windows.Forms.Label label1;
     }
 }

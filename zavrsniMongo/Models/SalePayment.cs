@@ -14,8 +14,6 @@ namespace zavrsniMongo.Models
         public ObjectId Id { get; set; }
         [BsonElement("amount")]
         public int Amount { get; set; }
-        [BsonElement("cardPaymentType")]
-        public string CardPaymentType { get; set; }
         [BsonElement("companyid")]
         public int CompanyId { get; set; }
         [BsonElement("deviceId")]
@@ -37,10 +35,9 @@ namespace zavrsniMongo.Models
         [BsonElement("type")]
         public string Type { get; set; }
 
-        public SalePayment(int amount, string cardPaymentType, int companyid, string deviceId, int salePaymentId, int paymentTypeCategoryId, int paymentTypeId, int restitution, ObjectId saleid, string statusId, int tips, string type)
+        public SalePayment(int amount, int companyid, string deviceId, int salePaymentId, int paymentTypeCategoryId, int paymentTypeId, int restitution, ObjectId saleid, string statusId, int tips, string type)
         {
             Amount = amount;
-            CardPaymentType = cardPaymentType;
             CompanyId = companyid;
             DeviceId = deviceId;
             SalePaymentId = salePaymentId;
