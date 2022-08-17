@@ -36,6 +36,7 @@ namespace zavrsniMongo.Forms
             this.filterTextBox = new System.Windows.Forms.RichTextBox();
             this.filterLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.salePaymentsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,13 +71,14 @@ namespace zavrsniMongo.Forms
             // 
             // queryButton
             // 
-            this.queryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.queryButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.queryButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.queryButton.Enabled = false;
             this.queryButton.FlatAppearance.BorderSize = 0;
             this.queryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.queryButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.queryButton.ForeColor = System.Drawing.Color.White;
-            this.queryButton.Location = new System.Drawing.Point(670, 417);
+            this.queryButton.Location = new System.Drawing.Point(818, 407);
             this.queryButton.Margin = new System.Windows.Forms.Padding(2);
             this.queryButton.Name = "queryButton";
             this.queryButton.Size = new System.Drawing.Size(98, 36);
@@ -87,19 +89,21 @@ namespace zavrsniMongo.Forms
             // 
             // queryTextBox
             // 
-            this.queryTextBox.Location = new System.Drawing.Point(408, 417);
+            this.queryTextBox.Location = new System.Drawing.Point(380, 417);
             this.queryTextBox.Name = "queryTextBox";
-            this.queryTextBox.Size = new System.Drawing.Size(111, 50);
+            this.queryTextBox.Size = new System.Drawing.Size(134, 50);
             this.queryTextBox.TabIndex = 33;
             this.queryTextBox.Text = "";
+            this.queryTextBox.TextChanged += new System.EventHandler(this.queryTextBox_TextChanged);
             // 
             // filterTextBox
             // 
-            this.filterTextBox.Location = new System.Drawing.Point(145, 417);
+            this.filterTextBox.Location = new System.Drawing.Point(136, 417);
             this.filterTextBox.Name = "filterTextBox";
-            this.filterTextBox.Size = new System.Drawing.Size(168, 50);
+            this.filterTextBox.Size = new System.Drawing.Size(134, 50);
             this.filterTextBox.TabIndex = 34;
             this.filterTextBox.Text = "";
+            this.filterTextBox.TextChanged += new System.EventHandler(this.filterTextBox_TextChanged);
             // 
             // filterLabel
             // 
@@ -115,11 +119,28 @@ namespace zavrsniMongo.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(332, 417);
+            this.label1.Location = new System.Drawing.Point(276, 417);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 14);
+            this.label1.Size = new System.Drawing.Size(85, 17);
             this.label1.TabIndex = 36;
             this.label1.Text = "za vrijednost:";
+            // 
+            // resetButton
+            // 
+            this.resetButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.resetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.resetButton.FlatAppearance.BorderSize = 0;
+            this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.ForeColor = System.Drawing.Color.White;
+            this.resetButton.Location = new System.Drawing.Point(818, 460);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(2);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(98, 36);
+            this.resetButton.TabIndex = 37;
+            this.resetButton.Text = "Resertiraj";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // SalePaymentsForm
             // 
@@ -127,6 +148,7 @@ namespace zavrsniMongo.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1034, 507);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.filterLabel);
             this.Controls.Add(this.filterTextBox);
@@ -152,5 +174,6 @@ namespace zavrsniMongo.Forms
         private System.Windows.Forms.RichTextBox filterTextBox;
         private System.Windows.Forms.Label filterLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button resetButton;
     }
 }

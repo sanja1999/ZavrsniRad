@@ -73,5 +73,36 @@ namespace zavrsniMongo.Forms
                 MessageBox.Show("Molim označite ćelije koje nisu nazivi stupaca");
             }
         }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            ReadAllDocuments();
+            queryTextBox.Text = String.Empty;
+            filterTextBox.Text = String.Empty;
+        }
+
+        private void filterTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(filterTextBox.Text))
+            {
+                queryButton.Enabled = true;
+            }
+            else
+            {
+                queryButton.Enabled = false;
+            }
+        }
+
+        private void queryTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(queryTextBox.Text))
+            {
+                queryButton.Enabled = true;
+            }
+            else
+            {
+                queryButton.Enabled = false;
+            }
+        }
     }
 }

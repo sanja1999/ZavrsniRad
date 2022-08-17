@@ -31,6 +31,7 @@ namespace zavrsniMongo.Forms
         {
             this.aboutAppLabel = new System.Windows.Forms.Label();
             this.aboutCloseButton = new System.Windows.Forms.Button();
+            this.aboutTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // aboutAppLabel
@@ -58,12 +59,26 @@ namespace zavrsniMongo.Forms
             this.aboutCloseButton.UseVisualStyleBackColor = false;
             this.aboutCloseButton.Click += new System.EventHandler(this.aboutCloseButton_Click);
             // 
+            // aboutTextBox
+            // 
+            this.aboutTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
+            this.aboutTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.aboutTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutTextBox.Location = new System.Drawing.Point(31, 119);
+            this.aboutTextBox.Name = "aboutTextBox";
+            this.aboutTextBox.ReadOnly = true;
+            this.aboutTextBox.Size = new System.Drawing.Size(731, 125);
+            this.aboutTextBox.TabIndex = 11;
+            this.aboutTextBox.Text = "Aplikaciju je napravila Sanja Šajfar u sklopu završnog rada \"Upotreba baza podata" +
+    "ka temeljenih na dokumentima pri razvoju programskih proizvoda\".";
+            // 
             // AboutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.aboutTextBox);
             this.Controls.Add(this.aboutCloseButton);
             this.Controls.Add(this.aboutAppLabel);
             this.Name = "AboutForm";
@@ -77,5 +92,6 @@ namespace zavrsniMongo.Forms
 
         private System.Windows.Forms.Label aboutAppLabel;
         private System.Windows.Forms.Button aboutCloseButton;
+        private System.Windows.Forms.RichTextBox aboutTextBox;
     }
 }
