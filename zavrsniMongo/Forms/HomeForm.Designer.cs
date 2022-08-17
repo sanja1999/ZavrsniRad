@@ -33,13 +33,10 @@ namespace zavrsniMongo.Forms
             this.menuBar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
             this.HomeContainer = new System.Windows.Forms.Panel();
-            this.buttonHome = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.categoriesButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.customerButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.itemButton = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -52,9 +49,11 @@ namespace zavrsniMongo.Forms
             this.menuBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panelNewForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuButton = new System.Windows.Forms.PictureBox();
+            this.buttonHome = new System.Windows.Forms.Button();
+            this.customerButton = new System.Windows.Forms.Button();
             this.menuBar.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.HomeContainer.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -64,6 +63,7 @@ namespace zavrsniMongo.Forms
             this.panel7.SuspendLayout();
             this.panelNewForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // menuBar
@@ -79,10 +79,10 @@ namespace zavrsniMongo.Forms
             this.menuBar.Controls.Add(this.panel7);
             this.menuBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuBar.Location = new System.Drawing.Point(0, 0);
-            this.menuBar.MaximumSize = new System.Drawing.Size(210, 550);
-            this.menuBar.MinimumSize = new System.Drawing.Size(58, 550);
+            this.menuBar.MaximumSize = new System.Drawing.Size(210, 1050);
+            this.menuBar.MinimumSize = new System.Drawing.Size(58, 1050);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(210, 550);
+            this.menuBar.Size = new System.Drawing.Size(210, 1050);
             this.menuBar.TabIndex = 1;
             // 
             // panel1
@@ -107,18 +107,6 @@ namespace zavrsniMongo.Forms
             this.label2.TabIndex = 1;
             this.label2.Text = "  Menu";
             // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Image = global::zavrsniMongo.Properties.Resources.Menu1;
-            this.menuButton.Location = new System.Drawing.Point(9, 24);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(32, 30);
-            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.menuButton.TabIndex = 1;
-            this.menuButton.TabStop = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            // 
             // HomeContainer
             // 
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -127,25 +115,6 @@ namespace zavrsniMongo.Forms
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(197, 47);
             this.HomeContainer.TabIndex = 2;
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(0, 0);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.buttonHome.Size = new System.Drawing.Size(197, 47);
-            this.buttonHome.TabIndex = 1;
-            this.buttonHome.Text = "           Početna";
-            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.UseVisualStyleBackColor = true;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // panel3
             // 
@@ -181,25 +150,6 @@ namespace zavrsniMongo.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(197, 47);
             this.panel4.TabIndex = 4;
-            // 
-            // customerButton
-            // 
-            this.customerButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.customerButton.FlatAppearance.BorderSize = 0;
-            this.customerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customerButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerButton.ForeColor = System.Drawing.Color.White;
-            this.customerButton.Image = ((System.Drawing.Image)(resources.GetObject("customerButton.Image")));
-            this.customerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customerButton.Location = new System.Drawing.Point(0, 0);
-            this.customerButton.Name = "customerButton";
-            this.customerButton.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.customerButton.Size = new System.Drawing.Size(197, 47);
-            this.customerButton.TabIndex = 1;
-            this.customerButton.Text = "           Customer";
-            this.customerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customerButton.UseVisualStyleBackColor = true;
-            this.customerButton.Click += new System.EventHandler(this.customerButton_Click);
             // 
             // panel5
             // 
@@ -336,26 +286,76 @@ namespace zavrsniMongo.Forms
             this.panelNewForm.Location = new System.Drawing.Point(210, 0);
             this.panelNewForm.Margin = new System.Windows.Forms.Padding(2);
             this.panelNewForm.Name = "panelNewForm";
-            this.panelNewForm.Size = new System.Drawing.Size(409, 550);
+            this.panelNewForm.Size = new System.Drawing.Size(627, 550);
             this.panelNewForm.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::zavrsniMongo.Properties.Resources.MongoDBFinal;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 72);
+            this.pictureBox1.Image = global::zavrsniMongo.Properties.Resources.bazaPodataka;
+            this.pictureBox1.Location = new System.Drawing.Point(169, 72);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 341);
+            this.pictureBox1.Size = new System.Drawing.Size(450, 300);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Image = global::zavrsniMongo.Properties.Resources.Menu1;
+            this.menuButton.Location = new System.Drawing.Point(9, 24);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(32, 30);
+            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.menuButton.TabIndex = 1;
+            this.menuButton.TabStop = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // buttonHome
+            // 
+            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.ForeColor = System.Drawing.Color.White;
+            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
+            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHome.Location = new System.Drawing.Point(0, 0);
+            this.buttonHome.Name = "buttonHome";
+            this.buttonHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.buttonHome.Size = new System.Drawing.Size(197, 47);
+            this.buttonHome.TabIndex = 1;
+            this.buttonHome.Text = "           Početna";
+            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHome.UseVisualStyleBackColor = true;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            // 
+            // customerButton
+            // 
+            this.customerButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.customerButton.FlatAppearance.BorderSize = 0;
+            this.customerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customerButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerButton.ForeColor = System.Drawing.Color.White;
+            this.customerButton.Image = ((System.Drawing.Image)(resources.GetObject("customerButton.Image")));
+            this.customerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customerButton.Location = new System.Drawing.Point(0, 0);
+            this.customerButton.Name = "customerButton";
+            this.customerButton.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.customerButton.Size = new System.Drawing.Size(197, 47);
+            this.customerButton.TabIndex = 1;
+            this.customerButton.Text = "           Customer";
+            this.customerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customerButton.UseVisualStyleBackColor = true;
+            this.customerButton.Click += new System.EventHandler(this.customerButton_Click);
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 550);
+            this.ClientSize = new System.Drawing.Size(837, 550);
             this.Controls.Add(this.panelNewForm);
             this.Controls.Add(this.menuBar);
             this.Name = "HomeForm";
@@ -363,7 +363,6 @@ namespace zavrsniMongo.Forms
             this.menuBar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.HomeContainer.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -374,6 +373,7 @@ namespace zavrsniMongo.Forms
             this.panelNewForm.ResumeLayout(false);
             this.panelNewForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
