@@ -73,7 +73,7 @@ namespace zavrsniMongo
             */
         }
 
-        private void Close_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

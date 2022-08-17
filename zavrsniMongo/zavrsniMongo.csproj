@@ -227,6 +227,9 @@
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\mongoDBpic2.png" />
+    <None Include="Resources\homeIcon.ico" />
+    <None Include="Resources\imageedit_45_8938306716.png" />
     <None Include="Resources\bazaPodataka2.png" />
     <None Include="Resources\MongoDBFinal.png" />
     <None Include="Resources\MongoDBNovo.png" />
