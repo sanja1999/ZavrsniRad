@@ -29,35 +29,23 @@ namespace zavrsniMongo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.ItemsDataGridView = new System.Windows.Forms.DataGridView();
-            this.closeButton = new System.Windows.Forms.Button();
+            this.itemsDataGridView = new System.Windows.Forms.DataGridView();
             this.closeItemsButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsDataGridView)).BeginInit();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchRichTextBox = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // ItemsDataGridView
+            // itemsDataGridView
             // 
-            this.ItemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ItemsDataGridView.Location = new System.Drawing.Point(30, 89);
-            this.ItemsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ItemsDataGridView.Name = "ItemsDataGridView";
-            this.ItemsDataGridView.RowTemplate.Height = 24;
-            this.ItemsDataGridView.Size = new System.Drawing.Size(480, 122);
-            this.ItemsDataGridView.TabIndex = 1;
-            // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.closeButton.FlatAppearance.BorderSize = 0;
-            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Image = global::zavrsniMongo.Properties.Resources.imageedit_45_8938306716;
-            this.closeButton.Location = new System.Drawing.Point(842, 11);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(60, 36);
-            this.closeButton.TabIndex = 5;
-            this.closeButton.UseVisualStyleBackColor = false;
+            this.itemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.itemsDataGridView.Location = new System.Drawing.Point(50, 151);
+            this.itemsDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.itemsDataGridView.Name = "itemsDataGridView";
+            this.itemsDataGridView.RowTemplate.Height = 24;
+            this.itemsDataGridView.Size = new System.Drawing.Size(989, 415);
+            this.itemsDataGridView.TabIndex = 1;
             // 
             // closeItemsButton
             // 
@@ -66,34 +54,77 @@ namespace zavrsniMongo.Forms
             this.closeItemsButton.FlatAppearance.BorderSize = 0;
             this.closeItemsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeItemsButton.Image = global::zavrsniMongo.Properties.Resources.imageedit_45_8938306716;
-            this.closeItemsButton.Location = new System.Drawing.Point(719, 11);
-            this.closeItemsButton.Margin = new System.Windows.Forms.Padding(2);
+            this.closeItemsButton.Location = new System.Drawing.Point(959, 14);
+            this.closeItemsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeItemsButton.Name = "closeItemsButton";
-            this.closeItemsButton.Size = new System.Drawing.Size(60, 36);
+            this.closeItemsButton.Size = new System.Drawing.Size(80, 44);
             this.closeItemsButton.TabIndex = 6;
             this.closeItemsButton.UseVisualStyleBackColor = false;
             this.closeItemsButton.Click += new System.EventHandler(this.closeItemsButton_Click);
             // 
+            // closeButton
+            // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Image = global::zavrsniMongo.Properties.Resources.imageedit_45_8938306716;
+            this.closeButton.Location = new System.Drawing.Point(1123, 14);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(80, 44);
+            this.closeButton.TabIndex = 5;
+            this.closeButton.UseVisualStyleBackColor = false;
+            // 
+            // searchButton
+            // 
+            this.searchButton.FlatAppearance.BorderSize = 0;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.Image = global::zavrsniMongo.Properties.Resources.search;
+            this.searchButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.searchButton.Location = new System.Drawing.Point(50, 95);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(265, 45);
+            this.searchButton.TabIndex = 9;
+            this.searchButton.Text = "Pretraži po opisu";
+            this.searchButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
+            // searchRichTextBox
+            // 
+            this.searchRichTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchRichTextBox.Location = new System.Drawing.Point(321, 101);
+            this.searchRichTextBox.Name = "searchRichTextBox";
+            this.searchRichTextBox.Size = new System.Drawing.Size(333, 39);
+            this.searchRichTextBox.TabIndex = 11;
+            this.searchRichTextBox.Text = "";
+            this.searchRichTextBox.TextChanged += new System.EventHandler(this.statusRichTextBox_TextChanged);
+            // 
             // ItemsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(790, 418);
+            this.ClientSize = new System.Drawing.Size(1053, 514);
+            this.Controls.Add(this.searchRichTextBox);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.closeItemsButton);
             this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.ItemsDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.itemsDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ItemsForm";
             this.Text = "ItemsForm";
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView ItemsDataGridView;
+        private System.Windows.Forms.DataGridView itemsDataGridView;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button closeItemsButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.RichTextBox searchRichTextBox;
     }
 }

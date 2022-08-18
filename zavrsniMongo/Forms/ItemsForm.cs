@@ -19,7 +19,7 @@ namespace zavrsniMongo.Forms
         public void ReadAllDocuments()
         {
             List<Item> list = collection.AsQueryable().ToList<Item>();
-            ItemsDataGridView.DataSource = list;
+            itemsDataGridView.DataSource = list;
 
         }
 
@@ -32,6 +32,13 @@ namespace zavrsniMongo.Forms
         private void closeItemsButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void statusRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+            var filter = Builders<Item>.Filter.Regex("description", new MongoDB.Bson.BsonRegularExpression(searchRichTextBox.Text, "i"));
+            var query = collection.Find(filter).ToList();
+            itemsDataGridView.DataSource = query;
         }
     }
 }

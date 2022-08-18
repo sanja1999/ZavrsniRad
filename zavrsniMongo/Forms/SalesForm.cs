@@ -32,5 +32,27 @@ namespace zavrsniMongo.Forms
         {
             this.Close();
         }
+
+        /*
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            //var filterDefinition = Builders<Sale>.Filter.Eq(a => a.Status.Contains(searchTextBox.Text), searchTextBox.Text);
+            //var query = collection.Find(filterDefinition).ToList();
+
+            // TOČAN REG EX var filter = Builders<Sale>.Filter.Regex("saleid", new MongoDB.Bson.BsonRegularExpression(searchTextBox.Text));
+            
+            var filter = Builders<Sale>.Filter.Regex("status", new MongoDB.Bson.BsonRegularExpression(searchTextBox.Text, "i"));
+            var query =collection.Find(filter).ToList();
+            salesDataGridView.DataSource = query;
+            
+        }
+        */
+
+        private void statusRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+            var filter = Builders<Sale>.Filter.Regex("status", new MongoDB.Bson.BsonRegularExpression(statusRichTextBox.Text, "i"));
+            var query = collection.Find(filter).ToList();
+            salesDataGridView.DataSource = query;
+        }
     }
 }

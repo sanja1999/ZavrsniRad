@@ -77,11 +77,6 @@ namespace zavrsniMongo.Forms
             menuBarTimer.Start();
         }
 
-        private void buttonHome_Click(object sender, EventArgs e)
-        {
-            openNewForm(new HomeForm());
-        }
-
         private void itemButton_Click(object sender, EventArgs e)
         {
             openNewForm(new ItemsForm());

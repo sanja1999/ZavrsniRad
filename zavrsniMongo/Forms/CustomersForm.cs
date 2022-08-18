@@ -41,9 +41,9 @@ namespace zavrsniMongo.Forms
             if (sortValue == "Silazno")
             {
 
-                var filterDefinition1 = Builders<Customer>.Filter.Empty;
-                var filterDefinition = Builders<Customer>.Sort.Ascending(sortType);
-                var query = collection.Find(filterDefinition1).Sort(filterDefinition).ToList();
+                var filterDefinition = Builders<Customer>.Filter.Empty;
+                var sortDefinition = Builders<Customer>.Sort.Ascending(sortType);
+                var query = collection.Find(filterDefinition).Sort(sortDefinition).ToList();
                 customersDataGridView.DataSource = query;
             }
             else

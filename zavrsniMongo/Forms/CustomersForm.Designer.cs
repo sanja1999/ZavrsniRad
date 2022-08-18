@@ -63,14 +63,14 @@ namespace zavrsniMongo.Forms
             this.customersDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customersDataGridView.Name = "customersDataGridView";
             this.customersDataGridView.ReadOnly = true;
-            this.customersDataGridView.Size = new System.Drawing.Size(1008, 258);
+            this.customersDataGridView.Size = new System.Drawing.Size(1008, 298);
             this.customersDataGridView.TabIndex = 6;
             // 
             // sortLabel
             // 
             this.sortLabel.AutoSize = true;
             this.sortLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortLabel.Location = new System.Drawing.Point(127, 382);
+            this.sortLabel.Location = new System.Drawing.Point(127, 432);
             this.sortLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sortLabel.Name = "sortLabel";
             this.sortLabel.Size = new System.Drawing.Size(83, 21);
@@ -86,7 +86,7 @@ namespace zavrsniMongo.Forms
             this.sortButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortButton.ForeColor = System.Drawing.Color.White;
-            this.sortButton.Location = new System.Drawing.Point(844, 369);
+            this.sortButton.Location = new System.Drawing.Point(844, 419);
             this.sortButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sortButton.Name = "sortButton";
             this.sortButton.Size = new System.Drawing.Size(131, 44);
@@ -101,7 +101,7 @@ namespace zavrsniMongo.Forms
             this.sortComboBox.Items.AddRange(new object[] {
             "Silazno",
             "Uzlazno"});
-            this.sortComboBox.Location = new System.Drawing.Point(581, 382);
+            this.sortComboBox.Location = new System.Drawing.Point(581, 432);
             this.sortComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sortComboBox.Name = "sortComboBox";
             this.sortComboBox.Size = new System.Drawing.Size(191, 24);
@@ -116,7 +116,7 @@ namespace zavrsniMongo.Forms
             this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateButton.ForeColor = System.Drawing.Color.White;
-            this.updateButton.Location = new System.Drawing.Point(844, 471);
+            this.updateButton.Location = new System.Drawing.Point(844, 521);
             this.updateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(131, 44);
@@ -132,7 +132,7 @@ namespace zavrsniMongo.Forms
             "FirstName",
             "LastName",
             "Company"});
-            this.sortTypeComboBox.Location = new System.Drawing.Point(308, 382);
+            this.sortTypeComboBox.Location = new System.Drawing.Point(308, 432);
             this.sortTypeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sortTypeComboBox.Name = "sortTypeComboBox";
             this.sortTypeComboBox.Size = new System.Drawing.Size(191, 24);
@@ -144,7 +144,7 @@ namespace zavrsniMongo.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1067, 609);
             this.Controls.Add(this.sortTypeComboBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.sortComboBox);
