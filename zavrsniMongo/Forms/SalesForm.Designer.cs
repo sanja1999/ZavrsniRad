@@ -33,17 +33,18 @@ namespace zavrsniMongo.Forms
             this.searchButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.statusRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.saleForm = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // salesDataGridView
             // 
             this.salesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.salesDataGridView.Location = new System.Drawing.Point(59, 160);
+            this.salesDataGridView.Location = new System.Drawing.Point(47, 185);
             this.salesDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.salesDataGridView.Name = "salesDataGridView";
             this.salesDataGridView.RowTemplate.Height = 24;
-            this.salesDataGridView.Size = new System.Drawing.Size(960, 436);
+            this.salesDataGridView.Size = new System.Drawing.Size(1071, 436);
             this.salesDataGridView.TabIndex = 0;
             // 
             // searchButton
@@ -53,7 +54,7 @@ namespace zavrsniMongo.Forms
             this.searchButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.Image = global::zavrsniMongo.Properties.Resources.search;
             this.searchButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.searchButton.Location = new System.Drawing.Point(59, 94);
+            this.searchButton.Location = new System.Drawing.Point(50, 115);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(281, 45);
             this.searchButton.TabIndex = 8;
@@ -68,7 +69,7 @@ namespace zavrsniMongo.Forms
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Image = global::zavrsniMongo.Properties.Resources.imageedit_45_8938306716;
-            this.closeButton.Location = new System.Drawing.Point(939, 14);
+            this.closeButton.Location = new System.Drawing.Point(1038, 22);
             this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(80, 44);
@@ -79,19 +80,31 @@ namespace zavrsniMongo.Forms
             // statusRichTextBox
             // 
             this.statusRichTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusRichTextBox.Location = new System.Drawing.Point(346, 100);
+            this.statusRichTextBox.Location = new System.Drawing.Point(337, 121);
             this.statusRichTextBox.Name = "statusRichTextBox";
             this.statusRichTextBox.Size = new System.Drawing.Size(333, 39);
             this.statusRichTextBox.TabIndex = 10;
             this.statusRichTextBox.Text = "";
             this.statusRichTextBox.TextChanged += new System.EventHandler(this.statusRichTextBox_TextChanged);
             // 
+            // saleForm
+            // 
+            this.saleForm.AutoSize = true;
+            this.saleForm.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saleForm.Location = new System.Drawing.Point(52, 67);
+            this.saleForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.saleForm.Name = "saleForm";
+            this.saleForm.Size = new System.Drawing.Size(113, 32);
+            this.saleForm.TabIndex = 35;
+            this.saleForm.Text = "Prodano";
+            // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1034, 632);
+            this.ClientSize = new System.Drawing.Size(1144, 632);
+            this.Controls.Add(this.saleForm);
             this.Controls.Add(this.statusRichTextBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.closeButton);
@@ -101,6 +114,7 @@ namespace zavrsniMongo.Forms
             this.Text = "SalesForm";
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +124,6 @@ namespace zavrsniMongo.Forms
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.RichTextBox statusRichTextBox;
+        private System.Windows.Forms.Label saleForm;
     }
 }

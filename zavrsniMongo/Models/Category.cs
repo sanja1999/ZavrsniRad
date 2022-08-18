@@ -6,8 +6,9 @@ namespace zavrsniMongo.Models
 {
     public class Category
     {
-        public Category(string name, int nodeDepth, string fullPathName, int leftNode, int rightNode, int parentID, DateTime createTime, DateTime timeStamp)
+        public Category(int categoryId, string name, int nodeDepth, string fullPathName, int leftNode, int rightNode, int parentID, DateTime createTime, DateTime timeStamp)
         {
+            CategoryId = categoryId;
             Name = name;
             NodeDepth = nodeDepth;
             FullPathName = fullPathName;
@@ -21,7 +22,7 @@ namespace zavrsniMongo.Models
         [BsonId]
         public ObjectId Id { get; set; }
         [BsonElement("categoryID")]
-        public int CategoryID { get; set; }
+        public int CategoryId { get; set; }
         [BsonElement("name")]
         public string Name { get; set; }
         [BsonElement("nodeDepth")]

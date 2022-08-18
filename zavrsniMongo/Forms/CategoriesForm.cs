@@ -58,7 +58,16 @@ namespace zavrsniMongo
         {
             try
             {
-                Category category = new Category(nameTextBox.Text, int.Parse(nodeDepthTextBox.Text), fullPathNameTextBox.Text,
+                int categoryId = int.Parse(categoryIdTextBox.Text);
+                bool exists = collection.Find(_ => _.CategoryId == int.Parse(categoryIdTextBox.Text)).Any();
+                do
+                {
+                    categoryId++;
+                    exists = collection.Find(_ => _.CategoryId == categoryId).Any();
+                } while (exists);
+                
+
+                Category category = new Category(categoryId,nameTextBox.Text, int.Parse(nodeDepthTextBox.Text), fullPathNameTextBox.Text,
                 int.Parse(leftNodeTextBox.Text), int.Parse(rightNodeTextBox.Text), int.Parse(parentIdTextBox.Text),
                 DateTime.Parse(createTimeDateTimePicker.Value.Date.ToString()), DateTime.Parse(timeStampDateTimePicker.Value.Date.ToString()));
                 collection.InsertOne(category);
@@ -74,11 +83,12 @@ namespace zavrsniMongo
         {
             try
             {
-                var updateDef = Builders<Category>.Update.Set("name", nameTextBox.Text).Set("nodeDepth", nodeDepthTextBox.Text)
+                int categoryId = int.Parse(categoryIdTextBox.Text);
+                var updateDef = Builders<Category>.Update.Set("categoryID", categoryId).Set("name", nameTextBox.Text).Set("nodeDepth", nodeDepthTextBox.Text)
                     .Set("fullPathName", fullPathNameTextBox.Text).Set("leftNode", leftNodeTextBox.Text)
                     .Set("rightNode", rightNodeTextBox.Text).Set("parentID", parentIdTextBox.Text)
                     .Set("createTime", DateTime.Parse(createTimeDateTimePicker.Value.Date.ToString())).Set("timeStamp", DateTime.Parse(timeStampDateTimePicker.Value.Date.ToString()));
-                collection.UpdateOne(category => category.Id == ObjectId.Parse(idTextBox.Text) && category.CategoryID == int.Parse(categoryIdTextBox.Text), updateDef);
+                collection.UpdateOne(category => category.Id == ObjectId.Parse(idTextBox.Text) && category.CategoryId == int.Parse(categoryIdTextBox.Text), updateDef);
                 ReadAllDocuments();
             }
             catch(FormatException)
@@ -91,6 +101,16 @@ namespace zavrsniMongo
         {
             collection.DeleteOne(category => category.Id == ObjectId.Parse(idTextBox.Text));
             ReadAllDocuments();
+        }
+
+        private void createTimeDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createTimeLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
