@@ -1,10 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace zavrsniMongo.Models
 {
@@ -34,20 +29,5 @@ namespace zavrsniMongo.Models
         public int Tips { get; set; }
         [BsonElement("type")]
         public string Type { get; set; }
-
-        public SalePayment(int amount, int companyid, string deviceId, int salePaymentId, int paymentTypeCategoryId, int paymentTypeId, int restitution, ObjectId saleid, string statusId, int tips, string type)
-        {
-            Amount = amount;
-            CompanyId = companyid;
-            DeviceId = deviceId;
-            SalePaymentId = salePaymentId;
-            PaymentTypeCategoryId = paymentTypeCategoryId;
-            PaymentTypeId = paymentTypeId;
-            Restitution = restitution;
-            Saleid = saleid;
-            StatusId = statusId;
-            Tips = tips;
-            Type = type;
-        }
     }
 }

@@ -1,10 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace zavrsniMongo.Models
 {
@@ -38,21 +34,5 @@ namespace zavrsniMongo.Models
         public int DiscountID { get; set; }
         [BsonElement("taxCategoryID")]
         public int TaxCategoryID { get; set; }
-
-        public Customer(string firstName, string lastName, string company, string title, DateTime createTime, DateTime timeStamp, bool archived, int contactID, int creditAccountID, int customerTypeID, int discountID, int taxCategoryID)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Company = company;
-            Title = title;
-            CreateTime = createTime;
-            TimeStamp = timeStamp;
-            Archived = archived;
-            ContactID = contactID;
-            CreditAccountID = creditAccountID;
-            CustomerTypeID = customerTypeID;
-            DiscountID = discountID;
-            TaxCategoryID = taxCategoryID;
-        }
     }
 }

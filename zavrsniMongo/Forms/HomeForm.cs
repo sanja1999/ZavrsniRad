@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using zavrsniMongo.Forms;
 
 namespace zavrsniMongo.Forms
 {
@@ -28,7 +20,6 @@ namespace zavrsniMongo.Forms
                     menuBarExpand = false;
                     menuBarTimer.Stop();
                 }
-                //menuBarExpand = true;
             }
             else
             {
@@ -42,7 +33,6 @@ namespace zavrsniMongo.Forms
         }
 
         private Form activeForm = null;
-        // open forms in container panel
         private void openNewForm(Form newForm)
         {
             if (activeForm != null)
@@ -55,7 +45,6 @@ namespace zavrsniMongo.Forms
             newForm.Dock = DockStyle.Fill;
             panelNewForm.Controls.Add(newForm);
             panelNewForm.Tag = newForm;
-            // in case put logo on panel
             newForm.BringToFront();
             newForm.Show();
         }
@@ -63,8 +52,6 @@ namespace zavrsniMongo.Forms
         private void categoriesButton_Click(object sender, EventArgs e)
         {
             openNewForm(new CategoriesForm());
-            //CategoriesForm form = new CategoriesForm();
-            //form.ShowDialog();
         }
 
         private void customerButton_Click(object sender, EventArgs e)

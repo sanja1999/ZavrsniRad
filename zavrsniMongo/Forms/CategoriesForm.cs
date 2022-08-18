@@ -27,7 +27,6 @@ namespace zavrsniMongo
             parentIdTextBox.Text = categoriesDataGridView.Rows[0].Cells[7].Value.ToString();
             createTimeDateTimePicker.Text = categoriesDataGridView.Rows[0].Cells[8].Value.ToString();
             timeStampDateTimePicker.Text = categoriesDataGridView.Rows[0].Cells[9].Value.ToString();
-
         }
 
         public CategoriesForm()
@@ -62,7 +61,6 @@ namespace zavrsniMongo
                 Category category = new Category(nameTextBox.Text, int.Parse(nodeDepthTextBox.Text), fullPathNameTextBox.Text,
                 int.Parse(leftNodeTextBox.Text), int.Parse(rightNodeTextBox.Text), int.Parse(parentIdTextBox.Text),
                 DateTime.Parse(createTimeDateTimePicker.Value.Date.ToString()), DateTime.Parse(timeStampDateTimePicker.Value.Date.ToString()));
-
                 collection.InsertOne(category);
                 ReadAllDocuments();
             }

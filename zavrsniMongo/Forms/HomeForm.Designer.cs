@@ -79,7 +79,7 @@ namespace zavrsniMongo.Forms
             this.menuBar.Controls.Add(this.panel7);
             this.menuBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuBar.Location = new System.Drawing.Point(0, 0);
-            this.menuBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuBar.Margin = new System.Windows.Forms.Padding(4);
             this.menuBar.MaximumSize = new System.Drawing.Size(267, 1292);
             this.menuBar.MinimumSize = new System.Drawing.Size(89, 1292);
             this.menuBar.Name = "menuBar";
@@ -91,7 +91,7 @@ namespace zavrsniMongo.Forms
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.HomeContainer.Controls.Add(this.buttonHome);
             this.HomeContainer.Location = new System.Drawing.Point(4, 4);
-            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4);
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(263, 68);
             this.HomeContainer.TabIndex = 2;
@@ -106,7 +106,7 @@ namespace zavrsniMongo.Forms
             this.buttonHome.Image = global::zavrsniMongo.Properties.Resources.mongoDBpic2;
             this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHome.Location = new System.Drawing.Point(-16, 11);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.buttonHome.Size = new System.Drawing.Size(244, 57);
@@ -120,7 +120,7 @@ namespace zavrsniMongo.Forms
             this.panel1.Controls.Add(this.menuButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(4, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 85);
             this.panel1.TabIndex = 1;
@@ -143,7 +143,7 @@ namespace zavrsniMongo.Forms
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuButton.Image = global::zavrsniMongo.Properties.Resources.Menu1;
             this.menuButton.Location = new System.Drawing.Point(12, 30);
-            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(55, 37);
             this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +155,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel3.Controls.Add(this.categoriesButton);
             this.panel3.Location = new System.Drawing.Point(4, 173);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 58);
             this.panel3.TabIndex = 3;
@@ -170,7 +170,7 @@ namespace zavrsniMongo.Forms
             this.categoriesButton.Image = global::zavrsniMongo.Properties.Resources.category;
             this.categoriesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.categoriesButton.Location = new System.Drawing.Point(0, 0);
-            this.categoriesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categoriesButton.Margin = new System.Windows.Forms.Padding(4);
             this.categoriesButton.Name = "categoriesButton";
             this.categoriesButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.categoriesButton.Size = new System.Drawing.Size(263, 58);
@@ -184,7 +184,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel4.Controls.Add(this.customerButton);
             this.panel4.Location = new System.Drawing.Point(4, 239);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 58);
             this.panel4.TabIndex = 4;
@@ -199,7 +199,7 @@ namespace zavrsniMongo.Forms
             this.customerButton.Image = ((System.Drawing.Image)(resources.GetObject("customerButton.Image")));
             this.customerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.customerButton.Location = new System.Drawing.Point(0, 0);
-            this.customerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerButton.Margin = new System.Windows.Forms.Padding(4);
             this.customerButton.Name = "customerButton";
             this.customerButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.customerButton.Size = new System.Drawing.Size(263, 58);
@@ -213,7 +213,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel5.Controls.Add(this.itemButton);
             this.panel5.Location = new System.Drawing.Point(4, 305);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(263, 58);
             this.panel5.TabIndex = 3;
@@ -228,7 +228,7 @@ namespace zavrsniMongo.Forms
             this.itemButton.Image = global::zavrsniMongo.Properties.Resources.item;
             this.itemButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.itemButton.Location = new System.Drawing.Point(0, 0);
-            this.itemButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.itemButton.Margin = new System.Windows.Forms.Padding(4);
             this.itemButton.Name = "itemButton";
             this.itemButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.itemButton.Size = new System.Drawing.Size(263, 58);
@@ -242,7 +242,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel6.Controls.Add(this.salePaymentButton);
             this.panel6.Location = new System.Drawing.Point(4, 371);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(263, 58);
             this.panel6.TabIndex = 5;
@@ -257,7 +257,7 @@ namespace zavrsniMongo.Forms
             this.salePaymentButton.Image = global::zavrsniMongo.Properties.Resources.salePayment;
             this.salePaymentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.salePaymentButton.Location = new System.Drawing.Point(0, 0);
-            this.salePaymentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salePaymentButton.Margin = new System.Windows.Forms.Padding(4);
             this.salePaymentButton.Name = "salePaymentButton";
             this.salePaymentButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.salePaymentButton.Size = new System.Drawing.Size(263, 58);
@@ -272,7 +272,7 @@ namespace zavrsniMongo.Forms
             this.panel2.Controls.Add(this.saleButton);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(4, 437);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(263, 58);
             this.panel2.TabIndex = 6;
@@ -287,7 +287,7 @@ namespace zavrsniMongo.Forms
             this.saleButton.Image = global::zavrsniMongo.Properties.Resources.sale;
             this.saleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saleButton.Location = new System.Drawing.Point(0, 0);
-            this.saleButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saleButton.Margin = new System.Windows.Forms.Padding(4);
             this.saleButton.Name = "saleButton";
             this.saleButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.saleButton.Size = new System.Drawing.Size(263, 58);
@@ -305,7 +305,7 @@ namespace zavrsniMongo.Forms
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(-31, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(299, 47);
@@ -318,7 +318,7 @@ namespace zavrsniMongo.Forms
             // 
             this.panel7.Controls.Add(this.aboutButton);
             this.panel7.Location = new System.Drawing.Point(4, 503);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(263, 58);
             this.panel7.TabIndex = 7;
@@ -333,7 +333,7 @@ namespace zavrsniMongo.Forms
             this.aboutButton.Image = global::zavrsniMongo.Properties.Resources.about;
             this.aboutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutButton.Location = new System.Drawing.Point(0, 0);
-            this.aboutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.aboutButton.Margin = new System.Windows.Forms.Padding(4);
             this.aboutButton.Name = "aboutButton";
             this.aboutButton.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.aboutButton.Size = new System.Drawing.Size(263, 58);
@@ -381,7 +381,7 @@ namespace zavrsniMongo.Forms
             this.Controls.Add(this.menuBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuBar.ResumeLayout(false);
