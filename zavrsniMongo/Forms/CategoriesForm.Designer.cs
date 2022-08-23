@@ -229,9 +229,6 @@ namespace zavrsniMongo
             this.createTimeDateTimePicker.Name = "createTimeDateTimePicker";
             this.createTimeDateTimePicker.Size = new System.Drawing.Size(83, 22);
             this.createTimeDateTimePicker.TabIndex = 25;
-            this.createTimeDateTimePicker.Value = new System.DateTime(2022, 8, 4, 0, 0, 0, 0);
-            this.createTimeDateTimePicker.ValueChanged += new System.EventHandler(this.createTimeDateTimePicker_ValueChanged);
-            // 
             // timeStampDateTimePicker
             // 
             this.timeStampDateTimePicker.CustomFormat = "YYYY-mm-dd THH:MM:ss";
@@ -273,7 +270,6 @@ namespace zavrsniMongo
             this.createTimeLabel.Size = new System.Drawing.Size(70, 15);
             this.createTimeLabel.TabIndex = 29;
             this.createTimeLabel.Text = "CreateTime:";
-            this.createTimeLabel.Click += new System.EventHandler(this.createTimeLabel_Click);
             // 
             // timeStampLabel
             // 

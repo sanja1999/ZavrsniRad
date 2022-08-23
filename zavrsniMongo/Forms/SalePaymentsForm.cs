@@ -78,7 +78,7 @@ namespace zavrsniMongo.Forms
 
         private void filterTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(filterTextBox.Text))
+            if (!String.IsNullOrEmpty(filterTextBox.Text) && !String.IsNullOrEmpty(queryTextBox.Text))
             {
                 queryButton.Enabled = true;
             }
@@ -90,7 +90,7 @@ namespace zavrsniMongo.Forms
 
         private void queryTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(queryTextBox.Text))
+            if (!String.IsNullOrEmpty(queryTextBox.Text) && !String.IsNullOrEmpty(filterTextBox.Text))
             {
                 queryButton.Enabled = true;
             }
