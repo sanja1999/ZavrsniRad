@@ -122,7 +122,7 @@ namespace zavrsniMongo.Forms
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(131, 44);
             this.updateButton.TabIndex = 34;
-            this.updateButton.Text = "Resertiraj";
+            this.updateButton.Text = "Resetiraj";
             this.updateButton.UseVisualStyleBackColor = false;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 

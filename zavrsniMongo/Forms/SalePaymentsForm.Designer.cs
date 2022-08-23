@@ -128,7 +128,7 @@ namespace zavrsniMongo.Forms
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(131, 44);
             this.resetButton.TabIndex = 37;
-            this.resetButton.Text = "Resertiraj";
+            this.resetButton.Text = "Resetiraj";
             this.resetButton.UseVisualStyleBackColor = false;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
