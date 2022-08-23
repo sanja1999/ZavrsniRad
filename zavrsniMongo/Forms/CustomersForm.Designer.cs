@@ -34,7 +34,7 @@ namespace zavrsniMongo.Forms
             this.sortLabel = new System.Windows.Forms.Label();
             this.sortButton = new System.Windows.Forms.Button();
             this.sortComboBox = new System.Windows.Forms.ComboBox();
-            this.updateButton = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
             this.sortTypeComboBox = new System.Windows.Forms.ComboBox();
             this.kupciLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
@@ -109,22 +109,22 @@ namespace zavrsniMongo.Forms
             this.sortComboBox.TabIndex = 33;
             this.sortComboBox.SelectedIndexChanged += new System.EventHandler(this.sortComboBox_SelectedIndexChanged);
             // 
-            // updateButton
+            // resetButton
             // 
-            this.updateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.updateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.updateButton.FlatAppearance.BorderSize = 0;
-            this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.ForeColor = System.Drawing.Color.White;
-            this.updateButton.Location = new System.Drawing.Point(964, 532);
-            this.updateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(131, 44);
-            this.updateButton.TabIndex = 34;
-            this.updateButton.Text = "Resetiraj";
-            this.updateButton.UseVisualStyleBackColor = false;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            this.resetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.resetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.resetButton.FlatAppearance.BorderSize = 0;
+            this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.ForeColor = System.Drawing.Color.White;
+            this.resetButton.Location = new System.Drawing.Point(964, 532);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(131, 44);
+            this.resetButton.TabIndex = 34;
+            this.resetButton.Text = "Resetiraj";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // sortTypeComboBox
             // 
@@ -159,7 +159,7 @@ namespace zavrsniMongo.Forms
             this.ClientSize = new System.Drawing.Size(1122, 609);
             this.Controls.Add(this.kupciLabel);
             this.Controls.Add(this.sortTypeComboBox);
-            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.sortComboBox);
             this.Controls.Add(this.sortButton);
             this.Controls.Add(this.sortLabel);
@@ -181,7 +181,7 @@ namespace zavrsniMongo.Forms
         private System.Windows.Forms.Label sortLabel;
         private System.Windows.Forms.Button sortButton;
         private System.Windows.Forms.ComboBox sortComboBox;
-        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.ComboBox sortTypeComboBox;
         private System.Windows.Forms.Label kupciLabel;
     }

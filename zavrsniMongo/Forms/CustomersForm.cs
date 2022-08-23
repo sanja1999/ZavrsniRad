@@ -71,7 +71,7 @@ namespace zavrsniMongo.Forms
             }
         }
 
-        private void updateButton_Click(object sender, EventArgs e)
+        private void resetButton_Click(object sender, EventArgs e)
         {
             ReadAllDocuments();
             sortComboBox.SelectedIndex = -1;
